@@ -1,0 +1,63 @@
+#palette{
+	border-top: 1px solid #767676;
+    border-bottom: 1px solid #282828;
+    font-size: 12px;
+}
+.palette_header{
+	line-height: 20px;
+    padding: 10px;
+    color: #e2e2e2;
+    background-color: #444;
+    border-bottom: 1px solid #3A3939;
+}
+.palette_top{
+	color: #e2e2e2;
+    padding: 10px;
+    font-size: 0;
+    > div{
+    	font-size: 12px;
+    }
+}
+.palette_b{
+
+}
+.palette_color{
+	width: 30px;
+    height: 30px;
+    display: inline-block;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 0 0px 2px #666;
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+
+.palette_item{
+	padding: 5px 5px 5px 14px;
+	> input{
+		width: 100px;
+		border: 1px solid #333;
+		background-color: #3f3f3f;
+		outline: none;
+		padding: 5px;
+		color: #e2e2e2;
+		margin-left: 15px;
+	}
+}
+.palette_bottom{
+	-webkit-user-select: none;
+	padding-bottom: 10px;
+	position: relative;
+	z-index: 1;
+}
+#palette_canvas{
+	display: block;
+	margin: 0 auto;
+}
+.palette_fake{
+	position: absolute;
+	z-index: 1;
+	cursor: url('../../img/pick.png'),default;
+	top: -20px;
+	left: 50%;
+	transform:transLateX(-50%);
+}

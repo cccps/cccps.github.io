@@ -1,0 +1,39 @@
+#asideTools{
+	float: left;
+    width: 40px;
+    border-top: 1px solid #767676;
+    height: 100%;
+    background-color: #535353;
+    box-sizing: border-box;
+}
+.asideToolsItem{
+	width: 40px;
+	height: 40px;
+	padding: 5px;
+	box-sizing: border-box;
+}
+.asideToolsItem{
+	> a{
+		display: block;
+		width: 30px;
+		height: 30px;
+		background-size: 20px;
+		background-repeat: no-repeat;
+		background-position: center;	
+		box-sizing: border-box;
+		border-radius: 3px;
+		&:hover{
+			border: 1px solid #444;
+			background-color: #666;
+		}
+	}
+	&.active{
+		> a{
+			background-color: #333;
+			&:hover{
+				border: none;
+				background-color: #333;
+			}
+		}
+	}
+}

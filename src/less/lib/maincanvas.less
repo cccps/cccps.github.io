@@ -1,0 +1,94 @@
+#maincanvasBox{
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+	z-index: 1;
+	padding-top: 21px;
+	box-sizing: border-box;
+}
+#maincanvas{
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+	z-index: 1;
+	display: flex;
+}
+#canvasBox{
+	position: relative;
+	z-index: 1;
+	margin: auto;
+}
+#paintcanvas{
+	background-color: #fff;
+	background-image: url(../../img/bg.png);
+}
+#activelayer,#dashcanvas{
+	position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+}
+#activelayer{
+	// opacity: 0;
+	display: none;
+}
+
+
+#filelist{
+	font-size: 0;
+	height: 21px;
+	background: #444444;
+	width: 100%;
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	border-top: 1px solid #767676;
+	border-left: 1px solid #282828;
+	border-right: 1px solid #282828;
+	box-sizing: border-box;
+}
+.fileitem{
+	position: relative;
+	z-index: 1;
+	color: #e2e2e2;
+	font-size: 12px;
+	line-height: 20px;
+	padding: 0 25px 0 5px;
+	display: inline-block;
+	cursor: pointer;
+	border-right: 1px solid #282828;
+	&.active{
+		background-color: #777;
+	}
+}
+.fileitem_close{
+	position: absolute;
+	z-index: 1;
+	width: 20px;
+	height: 20px;
+	right: 0;
+	top: 0;
+	&:before,&:after{
+		content: '';
+	    position: absolute;
+	    z-index: 1;
+	    width: 10px;
+	    height: 2px;
+	    background-color: #e2e2e2;
+	    top: 50%;
+	    left: 5px;
+	}
+	&:before{
+		transform:rotate(45deg);
+	}
+	&:after{
+		transform:rotate(-45deg);
+	}
+	&:hover{
+		background-color: #555;
+		&:before,&:after{
+			background-color: #fff;
+		}
+	}
+}

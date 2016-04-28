@@ -1,0 +1,35 @@
+@app_bgc:#282828;
+
+html,body{
+	height: 100%;
+}
+body{
+	background-color: @app_bgc;
+	margin:0;
+    -webkit-user-select: none;
+    font-family: 'Helvetica Neue', Roboto STHeiti ,'Microsoft YaHei';
+}
+p{
+	margin: 0;
+}
+a{
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.btn-hover:hover{
+	background-color: #737373;
+}
+.btn-hover.active{
+	background-color: @app_bgc;
+}
+
+
+#app{
+	position: relative;
+    z-index: 1;
+	width: 100%;
+    height: 100%;
+    padding: 74px 0 0;
+    box-sizing: border-box;
+}
